@@ -1,11 +1,11 @@
 const mensaje = (msj, estado, data, errores, res, incluirCantidad = false) => {
     let mensajes = {
-        msj: msj,
-        errores: errores
+        Msj: msj,
+        Errores: errores
     };
 
     if (incluirCantidad && Array.isArray(data)) {
-        mensajes.cantidad = data.length;
+        mensajes.Cantidad = data.length;
     }
 
     mensajes.data = data;
